@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+	div.panel.panel-default
+		.panel-heading
+			h3.panel-title Sign In
+
+		.panel-body
+			form.form-horizontal(role="form", method='POST')
+				.form-group
+					label.control-label Email
+					input.form-control(type='text', name='email')
+				.form-group
+					label.control-label password
+					input.form-control(type='password', name='password')
+				.form-group
+					button.btn.btn-success(type='submit') Submit
